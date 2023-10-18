@@ -18,12 +18,25 @@ class Vehicle
 end
 
 class Car < Vehicle
+  def initialize
+    super
+    @fuel = "Premium"
+    @make = "BMW"
+    @model = "i8"
+  end
+
   def honk_horn
     puts "Beeeeeeep!"
   end
 end
 
 class Bike < Vehicle
+  def initialize
+    super
+    @type = "Mountain"
+    @weight = 20
+  end
+
   def ring_bell
     puts "Ring ring!"
   end
@@ -35,5 +48,3 @@ bike.accelerate
 car.accelerate
 bike.ring_bell
 car.honk_horn
-
-p Bike.ancestors

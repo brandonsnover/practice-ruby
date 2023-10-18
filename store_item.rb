@@ -19,6 +19,12 @@ class Items
   end
 end
 
+class Food < Items
+  def shelf_life
+    @shelf_life = shelf_life
+  end
+end
+
 item1 = Items.new("Couch", 600, "black")
 item2 = Items.new("Chair", 200, "red")
 item1.price = 700
