@@ -7,3 +7,4 @@ item1.price = 700
 item1.print_info
 pp item2.name
 item3.print_info
+p item3.shelf_life
